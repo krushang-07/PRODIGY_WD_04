@@ -1,17 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaquaries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Krushang Savaliya</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaquaries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">
+      <img src="./assests/logo.png" alt="logo" class="logo-1">
+
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+      <div class="logo">
+      <img src="./assests/logo.png" alt="logo" class="logo-1">
+
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+ 
+    <!-- <img class="background"
+    src="./assests/wall.jpg" alt="background"> -->
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Krushang Savaliya</h1>
+      <p class="section__text__p2">MERN Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assests/resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assests/linkedin.png" alt="my linkedin profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/krushang-savaliya-497668242/'">
+        <img src="./assests/github.png" alt="my github profile" class="icon"
+          onclick="location.href='https://github.com/krushang-07'">
+  
+      </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assests/about-pic.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assests/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Fresher <br />MERN Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assests/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.E. Bachelors Degree<br />at LDRP institute of technology and research , Gandhinagar</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            <b>Hello!</b> I am a dedicated <b>MERN Stack Developer</b> currently in my 4th year at LDRP Institute of Technology and
+            Research in Gandhinagar, pursuing a <b>Bachelor's Degree in Engineering</b>. Skilled in MongoDB, Express.js, React,
+            and Node.js, I have developed my abilities through various <b>projects, workshops, and hackathon</b>. I have a
+            strong passion for problem-solving and am eager to contribute to innovative projects while collaborating
+            with like-minded professionals to create impactful solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assests/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+              src="./assests/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>CSS3/Tailwind</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+              src="./assests/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+              src="./assests/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>ReactJS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+              src="./assests/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+              src="./assests/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Material UI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img
+              src="./assests/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+              src="./assests/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+              src="./assests/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+              src="./assests/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Git</h3>
+                <p>Experience</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assests/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assests/project-1.jpg"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Chatter-Space</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/krushang-07/Chatter-Space'"
+            >
+              Github
+            </button>
+           
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assests/project-2.jpg"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Money-Mind</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Atveek/Money-Manager'"
+            >
+              Github
+            </button>
+          
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assests/project-04.jpg"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">News-app</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/krushang-07/News-world'"
+            >
+              Github
+            </button>
+          
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assests/project-05.jpg"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Text-Magic</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/krushang-07/News-world'"
+            >
+              Github
+            </button>
+          
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assests/project-06.jpg"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">SpeechReco</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/krushang-07/SPEECH-RECOGNIZE-'"
+            >
+              Github
+            </button>
+          
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assests/project-03.jpg"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">NIKE Clone</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/krushang-07/NIKE-CLONE'"
+            >
+              Github
+            </button>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assests/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assests/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:krushangsavaliya45@gmail.com?subject=Mail from our Website">krushangsavaliya45@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assests/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href='https://www.linkedin.com/in/krushang-savaliya-497668242/'>LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <!-- <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -19,49 +395,10 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-         src="./assests/profile-pic.jpg" alt="krushang savaliya" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Krushang Savaliya</h1>
-        <p class="section__text__p2">MERN Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assests/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-            <img src="./assests/linkedin.png" alt="my linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/krushang-savaliya-497668242/'">
-            <img src="./assests/github.png" alt="my github profile" class="icon" onclick="location.href='https://github.com/krushang-07'">
+    </nav> -->
+    <p>Copyright &#169; 2024 Krushang Savaliya. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-        </div>
-    </section>
-    <script src="script.js"></script>
-  </body>
 </html>
