@@ -108,10 +108,10 @@ a:hover {
 
 .menu-links a {
   display: block;
-  padding: 10px;
+  padding: 19px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: #468da6;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }

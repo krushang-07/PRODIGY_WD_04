@@ -19,13 +19,21 @@
   #hamburger-nav {
     display: flex;
   }
+  .menu-links{
+    font-size: small;
+  }
   #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
-  #profile,
   .section-container {
     display: block;
+  
+  }
+  #profile{
+     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .arrow {
@@ -55,7 +63,8 @@
   }
   #profile {
     height: 83vh;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
+    align-items: center;
   }
   article {
     font-size: 1rem;
